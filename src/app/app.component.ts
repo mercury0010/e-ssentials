@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { NgbOffcanvas, OffcanvasDismissReasons } from '@ng-bootstrap/ng-bootstrap';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'frontend';
+
+
+  imglogo = 'assets/logo-bg.png';
+  constructor(private db: AngularFirestore) {
+    const things = db.collection('things').valueChanges();
+    things.subscribe(console.log);
+  }
+
+
+
 }
