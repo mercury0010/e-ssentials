@@ -11,6 +11,7 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { CarouselComponent } from './components/carousel/carousel.component';
 /**const firebaseConfig = {
   apiKey: "AIzaSyDwe8-YnFMP39ZyFDMroQQW7kVjaKV5MiY",
   authDomain: "e-ssentials-44a91.firebaseapp.com",
@@ -32,6 +33,7 @@ const config = {
   declarations: [
     AppComponent,
     DashboardComponent,
+    CarouselComponent,
 
 
   ],

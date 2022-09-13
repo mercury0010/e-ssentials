@@ -11,7 +11,7 @@ import { AngularFirestore } from '@angular/fire/compat/firestore';
 export class AppComponent {
 
 
-  imglogo = 'assets/logo-bg.png';
+  imglogo = 'assets/essentialsbg.png';
   constructor(private db: AngularFirestore) {
     const things = db.collection('things').valueChanges();
     things.subscribe(console.log);
